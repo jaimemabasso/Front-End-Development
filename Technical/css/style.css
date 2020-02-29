@@ -1,0 +1,12 @@
+body{
+
+}
+
+/*  Header  */
+.bgimg{
+  background-image: url('../img/14.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 678px;
+  width: 100%;
+}
