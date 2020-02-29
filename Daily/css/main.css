@@ -1,0 +1,145 @@
+/*
+colours
+black #011627
+white #fafaff
+primary #83f3ed
+*/
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3{
+  font-weight: 900;
+}
+h4,h5,h5{
+  font-weight: 700;
+}
+
+/*----Button ------*/
+.btn-outline-secondary{
+  background-color: transparent !important;
+  border-color: #011627 !important;
+  color: #011627 !important;
+  border-radius: 0 !important;
+  position: relative;
+}
+.btn-outline-secondary:hover{
+  color: #fff !important;
+}
+.btn-outline-secondary:before{
+  content: '';
+  position: absolute;
+  background-color: #011627;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-outline-secondary:hover:before{
+  width: 100%;
+}
+.btn-secondary{
+  background: #011627 !important;
+  border-radius: 0;
+  border-color: #011627 !important;
+}
+.btn-secondary:hover{
+  color:#83f3ed;
+}
+.btn-primary{
+  background: #83f3ed !important;
+  border-color: #83f3ed !important;
+  border-radius: 0;
+  color: #011627 !important;
+}
+.btn-primary:hover{
+  background: #011627 !important;
+  color: #83f3ed !important;
+}
+
+/*Navbar*/
+.navbar{
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.nav-link, .navbar-brand{
+  color: #011627;
+}
+.navbar-link:hover, .navbar-brand:hover{
+  color: #777;
+}
+.navbar-brand{
+  font-size: 1.6rem;
+}
+
+.home .b1{
+  font-size: 14px;
+}
+
+
+/*Call-to-action*/
+.call-to-action{
+  background: #011627;
+  color: #fafaff;
+}
+.heading-line{
+  height: 3px;
+  width: 10%;
+  background: #83f3ed;
+}
+
+/*Portfolio*/
+.dark{
+  color: #83f3ed;
+  background: #011627;
+  height: 300px;
+}
+.dark i{
+  color: #83f3ed;
+  font-size: 1.3rem;
+}
+.portfolio .img-fluid{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio .col-lg-3{
+  position: relative;
+}
+.filter{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #83f3ed;
+  opacity: 0.5;
+}
+
+/*Footer*/
+.footer{
+  background: #011627;
+  color: #fafaff;
+}
+.footer a{
+  color: #fafaff;
+}
+
+/*Responsive*/
+@media(max-width:900px){
+  .navbar .nav-item{
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+  }
+  .call-to-action .container{
+      width: 100% !important;
+  }
+  .portfolio .img-fluid, .dark{
+    height: 300px;
+  }
+  .footer .copyright p{
+    font-size: 13px;
+  }
+}
